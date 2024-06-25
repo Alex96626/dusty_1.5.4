@@ -1,0 +1,137 @@
+.page {
+  margin: 0;
+
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+}
+
+.discount {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+
+  box-sizing: border-box;
+  max-width: 1100px;
+  min-width: 992px;
+  margin: 0 auto;
+
+  padding: 140px 0 106px 0;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 1.32;
+  letter-spacing: 0.01em;
+  color: #151875;
+
+  overflow-wrap: anywhere;
+}
+
+.sub-title {
+  margin: 16px 0 0;
+
+  font-size: 21px;
+  line-height: 1.32;
+  letter-spacing: 0.01em;
+  color: #fb2e86;
+
+  overflow-wrap: anywhere;
+}
+
+.description {
+  margin: 20px 0 0;
+
+  font-family: "Lato", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.76;
+  letter-spacing: 0.02em;
+  color: #b7bacb;
+
+  overflow-wrap: anywhere;
+}
+
+.discount__advantages-list {
+  margin: 28px 0 0;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  list-style: none;
+}
+
+.discount__advantages-item {
+  box-sizing: border-box;
+  max-width: 100%;
+  position: relative;
+
+  padding-left: 22px;
+
+  overflow-wrap: break-word;
+
+  flex: 1 1 calc(50% - 32px);
+}
+
+.discount__advantages-item::before {
+  content: "";
+  width: 18px;
+  height: 13px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* transform: translate(0, -50%); */
+
+  background-color: #fff;
+  background-image: url("./images/check.svg");
+  background-repeat: no-repeat;
+}
+
+.product-image-wrapper {
+  position: relative;
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+  width: 472px;
+  height: 472px;
+
+  border-radius: 50%;
+
+  background-color: #fcecf1;
+}
+
+.product-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.discount__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 37px;
+  padding: 20px 50px;
+
+  border: 3px solid #fb2e86;
+  border-radius: 2px;
+
+  background-color: #fb2e86;
+
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #fff;
+
+  transition: all 0.6s;
+}
+
+.discount__button:hover {
+  background-color: #fff;
+  color: #fb2e86;
+}
+
