@@ -1,20 +1,28 @@
 .page {
   margin: 0;
-
+  padding: 0 25px;
   font-family: "Josefin Sans", Helvetica, sans-serif;
 }
 
 .discount {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 100px;
 
   box-sizing: border-box;
   max-width: 1214px;
-  min-width: 992px;
+  /* min-width: 992px; */
   margin: 0 auto;
 
   padding: 140px 0 106px 0;
+}
+
+.discount-content {
+  flex: 1 0 610px;
+  max-width: 610px;
+  max-width: 100%;
 }
 
 .title {
@@ -65,7 +73,8 @@
 
 .discount__advantages-item {
   box-sizing: border-box;
-  max-width: 100%;
+  min-width: 299px;
+
   position: relative;
 
   padding-left: 29px;
@@ -90,7 +99,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* transform: translate(0, -50%); */
 
   background-color: #fff;
   background-image: url("./images/check.svg");
